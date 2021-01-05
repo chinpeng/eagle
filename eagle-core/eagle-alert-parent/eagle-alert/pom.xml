@@ -16,7 +16,7 @@
     <parent>
         <groupId>org.apache.eagle</groupId>
         <artifactId>eagle-alert-parent</artifactId>
-        <version>0.5.0</version>
+        <version>0.5.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>eagle-alert</artifactId>
@@ -166,7 +166,7 @@
                 <version>${metrics.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi</groupId>
+                <groupId>io.siddhi</groupId>
                 <artifactId>siddhi-core</artifactId>
                 <version>${siddhi.version}</version>
                 <exclusions>
@@ -177,29 +177,29 @@
                 </exclusions>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi</groupId>
+                <groupId>io.siddhi</groupId>
                 <artifactId>siddhi-query-api</artifactId>
                 <version>${siddhi.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi</groupId>
+                <groupId>io.siddhi</groupId>
                 <artifactId>siddhi-query-compiler</artifactId>
                 <version>${siddhi.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi</groupId>
-                <artifactId>siddhi-extension-regex</artifactId>
-                <version>${siddhi.version}</version>
+                <groupId>io.siddhi.extension.execution.regex</groupId>
+                <artifactId>siddhi-execution-regex</artifactId>
+                <version>${siddhi-execution-regex.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.siddhi</groupId>
-                <artifactId>siddhi-extension-string</artifactId>
-                <version>${siddhi.version}</version>
+                <groupId>io.siddhi.extension.execution.string</groupId>
+                <artifactId>siddhi-execution-string</artifactId>
+                <version>${siddhi-execution-string.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.kafka</groupId>
                 <artifactId>kafka-clients</artifactId>
-                <version>${kafka-clients.version}</version>
+                <version>${kafka.version}</version>
                 <!--<scope>test</scope> -->
                 <exclusions>
                     <exclusion>
